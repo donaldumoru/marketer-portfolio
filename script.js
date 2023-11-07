@@ -2,18 +2,19 @@
 
 let stylesheet = document.getElementById("stylesheet");
 let toggleButton = document.getElementById("toggle-button");
+let showMode = document.getElementById("show-mode");
 
 toggleButton.addEventListener("change", switcher);
 
 function switcher() {
     if (toggleButton.checked) {
-        // Switch to dark mode
-        stylesheet.setAttribute("href", "css/lightmode.css");
-    } else {
-        // Switch to light mode
-        stylesheet.setAttribute("href", "css/style.css");
 
+        stylesheet.setAttribute("href", "css/lightmode.css");
+        showMode.textContent = "You are currently viewing my website in light mode"
+    } else {
+
+        stylesheet.setAttribute("href", "css/style.css");
+        showMode.textContent = "You are currently viewing my website in dark mode"
     }
 
 }
-

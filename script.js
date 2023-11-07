@@ -1,26 +1,19 @@
 // DARK MODE BUTTON
 
 let stylesheet = document.getElementById("stylesheet");
-let switchButton = document.getElementById("switch");
+let toggleButton = document.getElementById("toggle-button");
 
-counter = 0;
-
-switchButton.addEventListener("click", switcher)
+toggleButton.addEventListener("change", switcher);
 
 function switcher() {
-
-    const layouts = ["css/style.css", "css/darkmode.css"];
-
-    counter++
-
-    stylesheet.setAttribute("href", layouts[counter]);
-
-    if (counter == 1) { counter = 0 - 1; };
-
-    if (layouts[counter] === "css/style.css") {
-        switchButton.textContent = "Dark Mode";
+    if (toggleButton.checked) {
+        // Switch to dark mode
+        stylesheet.setAttribute("href", "css/lightmode.css");
     } else {
-        switchButton.textContent = "Light Mode";
+        // Switch to light mode
+        stylesheet.setAttribute("href", "css/style.css");
+
     }
 
 }
+

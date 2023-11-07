@@ -22,9 +22,11 @@
         <ul class="desktop-nav">
             <a href="about-me.html"><li>ABOUT</li></a>
             <a href="portfolio.html"><li>PORTFOLIO</li></a>
-            <a href=""><li>CONTACT</li></a>
+            <a href="#"><li>CONTACT</li></a>
         </ul>
     </header>
+
+
 
     <main>
 
@@ -32,18 +34,89 @@
             <h1>KAUTHAR ADEDEJI</h1>
 
             <div class="toggle-dark-mode">
-                <button id="switch">Dark Mode</button>
+                <!-- <button id="switch">Dark Mode</button> -->
+
+                <div class="toggle-container">
+
+                    <style>
+                        
+                        .toggle-container {
+                            display: flex;
+                            align-items: center;
+                            margin: 20px;
+                        }
+                
+                        .switch {
+                            position: relative;
+                            display: inline-block;
+                            width: 60px;
+                            height: 34px;
+                        }
+                
+                        .slider {
+                            position: absolute;
+                            cursor: pointer;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: #fffdf7;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                            border-radius: 34px;
+                        }
+                
+                        .slider:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 4px;
+                            background-color: #242526;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                            border-radius: 50%;
+                        }
+                
+                        input:checked + .slider {
+                            background-color: #242526;
+                        }
+                
+                        input:checked + .slider:before {
+                            -webkit-transform: translateX(26px);
+                            -ms-transform: translateX(26px);
+                            transform: translateX(26px);
+                            background-color: #fffdf7;
+                        }
+                
+                        input{
+                            display: none;
+                        }
+                
+                        #modeLabel {
+                            margin-left: 10px;
+                        }
+                
+                    </style>
+
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-button">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </div>
 
         <section class="title-info-container">
             <div class="title-info location">
+                <img src="images/location-pin.png" alt="">
                 BASED IN HULL, UNITED KINGDOM
             </div>
 
 
             <div class="title-info title-details-container">
-                <div class="title-details">LOREM &#8739; LOREM &#8739; LOREM</div>
+                <div class="title-details">LOREM IPSUM &#8739; LOREM IPSUM &#8739; LOREM IPSUM</div>
             </div>
 
             <div class="title-info linkedin">
@@ -58,6 +131,5 @@
 
 
     </main>
-    
 </body>
 </html>

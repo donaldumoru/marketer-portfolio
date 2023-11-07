@@ -15,9 +15,20 @@
 </head>
 <body>
 
-    <header>
+    <nav>
+        <div class="empty-area">
+            <div id="show-mode">
+                You are currently viewing my website in dark mode
+            </div>
+           
+            <label class="switch">
+                <input type="checkbox" id="toggle-button">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
 
-        <div class="empty-area"></div>
+    <header>
 
         <ul class="desktop-nav">
             <a href="about-me.html"><li>ABOUT</li></a>
@@ -34,7 +45,6 @@
             <h1>KAUTHAR ADEDEJI</h1>
 
             <div class="toggle-dark-mode">
-                <!-- <button id="switch">Dark Mode</button> -->
 
                 <div class="toggle-container">
 
@@ -50,7 +60,7 @@
                             position: relative;
                             display: inline-block;
                             width: 60px;
-                            height: 34px;
+                            height: 30px;
                         }
                 
                         .slider {
@@ -63,16 +73,16 @@
                             background-color: #fffdf7;
                             -webkit-transition: .4s;
                             transition: .4s;
-                            border-radius: 34px;
+                            border-radius: 15px
                         }
                 
                         .slider:before {
                             position: absolute;
                             content: "";
-                            height: 26px;
-                            width: 26px;
+                            height: 23px;
+                            width: 23px;
                             left: 4px;
-                            bottom: 4px;
+                            bottom: 2.8px;
                             background-color: #242526;
                             -webkit-transition: .4s;
                             transition: .4s;
@@ -100,10 +110,7 @@
                 
                     </style>
 
-                    <label class="switch">
-                        <input type="checkbox" id="toggle-button">
-                        <span class="slider"></span>
-                    </label>
+
                 </div>
             </div>
         </div>

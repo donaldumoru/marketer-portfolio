@@ -40,6 +40,24 @@ header{
     border-top: 1.5px solid #242526;
 }
 
+.desktop-other-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    font-weight: 700;
+    border-top: 1.5px solid #242526;
+}
+
+.nav-container{
+    display: flex;
+    gap: 30px;
+}
+
+.logo li{
+    font-size: 2rem;
+    font-weight: 900;
+}
 
 /* MAIN STYLING*/
 
@@ -62,6 +80,7 @@ header{
     font-size: 6rem;
     letter-spacing: 5px;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 #switch{
@@ -108,7 +127,13 @@ header{
 }
 
 .banner{
-    background-image: url(../images/test.jpg);
+    background-image: url(../images/homepage-banner.jpg);
     height: 550px;
     padding: 5px;
+    background-size: cover;
+}
+
+.icon-grid img{
+    height: 80px;
+    filter: brightness(20%);
 }

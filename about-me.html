@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="">
-    <title>Kauthar Adedeji - Official website</title>
+    <title>Kauthar Adedeji - About</title>
 
     <link rel="icon" href="" alt="favicon" type="image/x-icon" />
     <link rel="apple-touch-icon" href="">
@@ -13,7 +13,99 @@
     <link rel="stylesheet" id="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-    
+<body id="saved-mode">
+
+    <nav>
+        <div class="empty-area">
+            <div id="show-mode">
+                You are currently viewing my website in dark mode
+            </div>
+           
+            <label class="switch">
+                <input type="checkbox" id="toggle-button">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+    <header>
+        <ul class="desktop-other-nav">
+            <div class="logo">
+                <a href="index.html"><li>KAUTHAR ADEDEJI</li></a>
+            </div>
+
+            <div class="nav-container">
+                <a href="about-me.html"><li>ABOUT</li></a>
+                <a href="portfolio.html"><li>PORTFOLIO</li></a>
+                <a href=""><li>CONTACT</li></a>
+            </div>
+        </ul>
+    </header>
+
+
+
+
+
+    <style>
+                        
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fffdf7;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 15px
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 23px;
+            width: 23px;
+            left: 4px;
+            bottom: 2.8px;
+            background-color: #242526;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #242526;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+            background-color: #fffdf7;
+        }
+
+        input{
+            display: none;
+        }
+
+        #modeLabel {
+            margin-left: 10px;
+        }
+
+    </style>
 </body>
 </html>

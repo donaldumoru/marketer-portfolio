@@ -92,17 +92,12 @@
                 width: 40px;
                 background-color: #e9e6dd;
                 border-radius: 20px;
-                top: 22px;
-                left: 22px;
+                top: 29px;
+                left: 29px;
+                transform: scale(0); /* Set initial scale to 0 */
+                transition: transform 1s ease;
 
             }
-/* 
-            .revealss {
-                position: relative;
-                transform: translateY(150px);
-                opacity: 0;
-                transition: 1.5s all ease;
-            } */
 
             .revealss.square-box{
                 transform: translateY(150px);
@@ -122,10 +117,19 @@
             }
 
             .revealss.active.circle{
-                transform: scale(1.5);
-                opacity: 0;
+                opacity: 1;
                 transition: 1.5s ease;
+                transform: scale(1);
             }
+
+            
+/* 
+            .revealss {
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 1.5s all ease;
+            } */
             
             
 

@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="">
     <title>Document</title>
     <link rel="stylesheet" id="stylesheet" href="css/style.css">
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
 </head>
 <body id="saved-mode">
     <div id="about-main">
@@ -96,7 +96,37 @@
                 left: 22px;
 
             }
-        
+/* 
+            .revealss {
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 1.5s all ease;
+            } */
+
+            .revealss.square-box{
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 1.5s all ease;
+            }
+
+            .revealss.outer-square{
+                transform: translateX(-150px);
+                opacity: 0;
+                transition: 1.5s all ease;
+            }
+  
+            .revealss.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .revealss.active.circle{
+                transform: scale(1.5);
+                opacity: 0;
+                transition: 1.5s ease;
+            }
+            
             
 
             
@@ -121,17 +151,19 @@
 
         <div class="square-container">
             <div class="square-box-wrapper">
-                <div class="square-box container reveal">
+                <div class="square-box container revealss">
 
-                    <div class="circle">
 
-                    </div>
                     <p class="name">... AND ITS <br> NICE TO MEET YOU!</p>
 
                 </div>
 
+                <div class="circle revealss">
+
+                </div>
+
                 
-                <div class="outer-square container reveal">
+                <div class="outer-square container revealss">
                     <p>HI, I'M KAUTHAR ADEDEJI</p>
                 </div>
             </div>
@@ -315,6 +347,49 @@
     </div>
 
 </footer>
+
+<script>
+
+// window.onscroll = () => {
+//     section.forEach((i) => {
+//         let top = window.scrollY;
+//         let offset = i.offsetTop - 150;
+//         let height = i.offsetHeight;
+//         let id = i.getAttribute("id");
+
+//         if (top >= offset && top < offset + height) {
+//             menu.forEach((link) => {
+//                 link.classList.remove("active");
+//                 document
+//                     .querySelector("header nav a[href*=" + id + "]")
+//                     .classList.add("active");
+//             });
+//         }
+//     });
+// };
+
+function revealBox() {
+    var revealBox = document.querySelectorAll(".revealss");
+
+    for (var i = 0; i < revealBox.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealBox[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            revealBox[i].classList.add("active");
+        } else {
+            revealBox[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", revealBox);
+
+// To check the scroll position on page load
+revealBox();
+
+</script>
 
 </body>
 </html>

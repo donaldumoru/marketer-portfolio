@@ -133,7 +133,85 @@ header{
     background-size: cover;
 }
 
+
+.info-container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 0 20%;
+}
+
+.info-intro{
+    text-align: center;
+}
+
+.info-intro h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.info-intro p{
+    margin-top: 10px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.icons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 45px;
+}
+
+.icon-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.icon-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.icon-details p{
+    margin-top: 10px;
+    font-family: serif;
+    font-size: 1.4rem;
+}
+
+.get-in-touch{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch span{
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: transform 0.3s ease-in-out;
+}
+
+.get-in-touch:hover span{
+    color: #acaba8;
+}
+
+.get-in-touch img{
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+    fill: #e9e6dd;
+}
+
+.get-in-touch:hover img{
+    transform: translateX(60%);
+}
+
 .icon-grid img{
-    height: 80px;
+    width: 80px;
     filter: brightness(20%);
 }

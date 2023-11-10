@@ -147,6 +147,21 @@ header{
     background-size: cover;
 }
 
+
+/* Text sliding in styling */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+  
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .info-container{
     margin-top: 80px;
     display: flex;
@@ -388,6 +403,85 @@ footer a:hover{
 
 
 
+#about-main{
+    position: relative;
+}
+
+.square-container{
+    position: absolute;
+    right: 200px;
+    bottom: 200px;
+}
+
+
+.square-box{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 5px solid #e9e6dd;
+
+}
+
+.name{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+    font-size: 3rem;
+}
+
+.outer-square{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border: 5px solid #e9e6dd;
+    right: 200px;
+    bottom: 200px;
+}   
+
+.outer-square p{
+    font-size: 3rem;
+    padding: 0 10px;
+}
+
+.circle{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #e9e6dd;
+    border-radius: 20px;
+    top: 29px;
+    left: 29px;
+    transform: scale(0); /* Set initial scale to 0 */
+    transition: transform 1s ease;
+
+}
+
+.revealss.square-box{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.revealss.outer-square{
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.revealss.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.revealss.active.circle{
+    opacity: 1;
+    transition: 1.5s ease;
+    transform: scale(1);
+}
+
+
+
 /* PORTFOLIO PAGE */
 
 #portfolio-header{
@@ -460,20 +554,5 @@ footer a:hover{
 
 #portfolio-footer a:hover{
     color: #646464;
-}
-
-
-
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1.5s all ease;
-}
-  
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
 }
   

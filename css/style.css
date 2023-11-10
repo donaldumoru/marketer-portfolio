@@ -20,7 +20,6 @@ body{
     
 }
 
-
 /* DESKTOP NAV BAR STYLING*/
 
 header{
@@ -96,7 +95,7 @@ header{
     padding: 30px;
 }
 
-.title-text-container h1{
+.title-text-container p{
     font-size: 6rem;
     letter-spacing: 5px;
     font-weight: 900;
@@ -565,9 +564,6 @@ footer a:hover{
 
 
 
-
-
-
 /* MEDIA QUERIES */
 
 
@@ -614,8 +610,9 @@ footer a:hover{
   .menu {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     gap: 1rem;
+    align-items: flex-end;
+    list-style: none;
     background-color: #e9e6dd;
     position: absolute;
     top: 50px;
@@ -628,55 +625,59 @@ footer a:hover{
   }
   
   .menu.active {
-    max-height: 300px; /* Adjust the value as needed */
+    max-height: 300px; 
   }
   
   .menu li {
     margin: 10px 0;
     padding: 0 30px;
-    font-weight: 700
+    font-weight: 700;
   }
 
   .menu a {
     color: #242526;
   }
   
-  /* Media query for small screens (e.g., mobile) */
-  @media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-  }
-  
 
-@media (max-width: 768px){
-    .desktop-header{
+@media screen and (max-width: 500px){
+
+    .desktop-header,
+    .linkedin,
+    .info-container,
+    .my-projects,footer,.banner{
         display: none;
-    }
-
-    .info-container{
-        display: none;
-    }
-
-    .my-projects{
-        display: none;
-    }
-
-    footer{
-        display: none;
-    }
-
-    .banner{
-        display: none;
-    }
-
-    .title-text-container h1{
-        font-size: 3rem;
     }
 
     .menu-toggle {
         display: flex;
     }
 
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-logo{
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    .title-text-container p{
+        padding-top: 90px;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .title-info-container{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 60px;
+    }
+
+    .title-info{
+        width: 100%;
+        text-align: center;
+    }
     
 }

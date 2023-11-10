@@ -11,21 +11,10 @@
     <link rel="apple-touch-icon" href="">
     <title>Document</title>
     <link rel="stylesheet" id="stylesheet" href="css/style.css">
-    <!-- <script defer src="script.js"></script> -->
+    <script defer src="script.js"></script>
 </head>
 <body id="saved-mode">
     <div id="about-main">
-            <!-- <div class="empty-area">
-                <div id="show-mode">
-                    You are currently viewing my website in dark mode
-                </div>
-            
-                <label class="switch">
-                    <input type="checkbox" id="toggle-button">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </nav> -->
 
 
 
@@ -43,120 +32,10 @@
             </ul>
         </header>
 
-        <style>
-
-            #about-main{
-                position: relative;
-            }
-
-            .square-container{
-                position: absolute;
-                right: 200px;
-                bottom: 200px;
-            }
-
-
-            .square-box{
-                position: relative;
-                height: 300px;
-                width: 300px;
-                border: 5px solid #e9e6dd;
-
-            }
-
-            .name{
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                padding: 0 10px;
-                font-size: 3rem;
-            }
-
-            .outer-square{
-                position: absolute;
-                height: 300px;
-                width: 300px;
-                border: 5px solid #e9e6dd;
-                right: 200px;
-                bottom: 200px;
-            }   
-
-            .outer-square p{
-                font-size: 3rem;
-                padding: 0 10px;
-            }
-
-            .circle{
-                position: absolute;
-                height: 40px;
-                width: 40px;
-                background-color: #e9e6dd;
-                border-radius: 20px;
-                top: 29px;
-                left: 29px;
-                transform: scale(0); /* Set initial scale to 0 */
-                transition: transform 1s ease;
-
-            }
-
-            .revealss.square-box{
-                transform: translateY(150px);
-                opacity: 0;
-                transition: 1.5s all ease;
-            }
-
-            .revealss.outer-square{
-                transform: translateX(-150px);
-                opacity: 0;
-                transition: 1.5s all ease;
-            }
-  
-            .revealss.active {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            .revealss.active.circle{
-                opacity: 1;
-                transition: 1.5s ease;
-                transform: scale(1);
-            }
-
-            
-/* 
-            .revealss {
-                position: relative;
-                transform: translateY(150px);
-                opacity: 0;
-                transition: 1.5s all ease;
-            } */
-            
-            
-
-            
-        </style>
-
-        <!-- <div class="square-container">
-            <div class="square-box-wrapper">
-                <div class="square-box container reveal">
-
-                    <div class="circle">
-
-                    </div>
-                    <p class="name">... AND ITS <br> NICE TO MEET YOU!</p>
-
-                    <div class="outer-square">
-                        <p>HI, I'M KAUTHAR ADEDEJI</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
 
         <div class="square-container">
             <div class="square-box-wrapper">
                 <div class="square-box container revealss">
-
 
                     <p class="name">... AND ITS <br> NICE TO MEET YOU!</p>
 
@@ -176,7 +55,7 @@
 
     <main>
         <div class="about-me-container">
-            <div class="about-me">
+            <div class="about-me reveal">
                 <h2>
                     ABOUT ME
                 </h2>
@@ -194,79 +73,12 @@
                 </p>
             </div>
 
-            <div class="contact-email">
+            <div class="contact-email reveal">
                 <h2>CONTACT</h2>
                 <p>adesoladdj@gmail.com</p>
             </div>
         </div>
     </main>
-
-
-
-
-
-
-    <style>
-                        
-        .toggle-container {
-            display: flex;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 30px;
-        }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #fffdf7;
-            -webkit-transition: .4s;
-            transition: .4s;
-            border-radius: 15px
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 23px;
-            width: 23px;
-            left: 4px;
-            bottom: 2.8px;
-            background-color: #242526;
-            -webkit-transition: .4s;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked + .slider {
-            background-color: #242526;
-        }
-
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-            background-color: #fffdf7;
-        }
-
-        input{
-            display: none;
-        }
-
-        #modeLabel {
-            margin-left: 10px;
-        }
-
-    </style>
 
 
 <footer>
@@ -348,52 +160,14 @@
         <div class="">
             <a href="privacy-policy.html">PRIVACY POLICY</a>
         </div>
+
+        <div class="">
+            SITE BY <a href="https://www.otehplatforms.com/"> OTEH PLATFORMS</a>
+        </div>
+            
     </div>
 
 </footer>
-
-<script>
-
-// window.onscroll = () => {
-//     section.forEach((i) => {
-//         let top = window.scrollY;
-//         let offset = i.offsetTop - 150;
-//         let height = i.offsetHeight;
-//         let id = i.getAttribute("id");
-
-//         if (top >= offset && top < offset + height) {
-//             menu.forEach((link) => {
-//                 link.classList.remove("active");
-//                 document
-//                     .querySelector("header nav a[href*=" + id + "]")
-//                     .classList.add("active");
-//             });
-//         }
-//     });
-// };
-
-function revealBox() {
-    var revealBox = document.querySelectorAll(".revealss");
-
-    for (var i = 0; i < revealBox.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = revealBox[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-            revealBox[i].classList.add("active");
-        } else {
-            revealBox[i].classList.remove("active");
-        }
-    }
-}
-
-window.addEventListener("scroll", revealBox);
-
-// To check the scroll position on page load
-revealBox();
-
-</script>
 
 </body>
 </html>

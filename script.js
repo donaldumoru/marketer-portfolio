@@ -110,26 +110,6 @@
 // }
 
 
-let section = document.querySelectorAll("section");
-let menu = document.querySelectorAll("header nav a");
-
-// window.onscroll = () => {
-//     section.forEach((i) => {
-//         let top = window.scrollY;
-//         let offset = i.offsetTop - 150;
-//         let height = i.offsetHeight;
-//         let id = i.getAttribute("id");
-
-//         if (top >= offset && top < offset + height) {
-//             menu.forEach((link) => {
-//                 link.classList.remove("active");
-//                 document
-//                     .querySelector("header nav a[href*=" + id + "]")
-//                     .classList.add("active");
-//             });
-//         }
-//     });
-// };
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -149,5 +129,27 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
 reveal();
+
+
+
+
+function revealBox() {
+    var revealBox = document.querySelectorAll(".revealss");
+
+    for (var i = 0; i < revealBox.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealBox[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            revealBox[i].classList.add("active");
+        } else {
+            revealBox[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", revealBox);
+
+revealBox();

@@ -614,7 +614,7 @@ footer a:hover{
   .menu {
     display: flex;
     flex-direction: column;
-    list-style: none;
+    align-items: flex-end;
     background-color: #e9e6dd;
     position: absolute;
     top: 50px;

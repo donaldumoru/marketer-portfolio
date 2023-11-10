@@ -42,8 +42,11 @@ window.addEventListener("scroll", revealBox);
 revealBox();
 
 
-function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-}
+// Toggle the mobile menu and transform the bars to X
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+});

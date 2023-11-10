@@ -9,26 +9,59 @@
 
     <link rel="icon" href="" alt="favicon" type="image/x-icon" />
     <link rel="apple-touch-icon" href="">
-    <title>Document</title>
     <link rel="stylesheet" id="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
 </head>
 <body id="index-page">
 
-    <nav>
-        <div class="empty-area">
-            <!-- <div id="show-mode">
-                You are currently viewing my website in dark mode
-            </div>
-           
-            <label class="switch">
-                <input type="checkbox" id="toggle-button">
-                <span class="slider"></span>
-            </label> -->
-        </div>
-    </nav>
+    <!-- <header class="top-nav">
+		<div>
+			KAUTHAR ADEDEJI
+		</div>
+		
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+		<div class='menu-button'></div>
+	  	</label>
+		
+		<ul class="menu">
+			<li>PORTFOLIO</li>
+			<li>ABOUT ME</li>
+			<li>CONTACT ME</li>
+			<li>RESUME</li>
+		</ul>
+    </header> -->
 
-    <header>
+    <header class="mobile-nav">
+		<div class="logo">LOGO</div>
+
+
+
+
+
+		
+		<!-- hamburger -->
+		<input type="checkbox" id="navi-toggle" class="checkbox" />
+		<label for="navi-toggle" class="button">
+		<span class="icon">&nbsp;</span>
+		</label>
+		<div class="background">&nbsp;</div>
+	
+		<!-- nav -->
+		<nav class="nav">
+		<ul class="list">
+			<li class="item"> <a class="link"> Link 1 </a> </li>
+			<li class="item"> <a class="link"> Link 2 </a> </li>
+			<li class="item"> <a class="link"> Link 4 </a> </li>
+			<li class="item"> <a class="link"> Link 5 </a> </li>
+			<li class="item"> <a class="link"> Link 6 </a> </li>
+		</ul>
+        </nav>
+    </header>
+    
+
+
+    <header class="desktop-header">
 
         <ul class="desktop-nav">
             <a href="about-me.html"><li>ABOUT</li></a>
@@ -43,76 +76,6 @@
 
         <div class="title-text-container">
             <h1>Kauthar Adedeji</h1>
-
-            <div class="toggle-dark-mode">
-
-                <div class="toggle-container">
-
-                    <style>
-                        
-                        .toggle-container {
-                            display: flex;
-                            align-items: center;
-                            margin: 20px;
-                        }
-                
-                        .switch {
-                            position: relative;
-                            display: inline-block;
-                            width: 60px;
-                            height: 30px;
-                        }
-                
-                        .slider {
-                            position: absolute;
-                            cursor: pointer;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            background-color: #fffdf7;
-                            -webkit-transition: .4s;
-                            transition: .4s;
-                            border-radius: 15px
-                        }
-                
-                        .slider:before {
-                            position: absolute;
-                            content: "";
-                            height: 23px;
-                            width: 23px;
-                            left: 4px;
-                            bottom: 2.8px;
-                            background-color: #242526;
-                            -webkit-transition: .4s;
-                            transition: .4s;
-                            border-radius: 50%;
-                        }
-                
-                        input:checked + .slider {
-                            background-color: #242526;
-                        }
-                
-                        input:checked + .slider:before {
-                            -webkit-transform: translateX(26px);
-                            -ms-transform: translateX(26px);
-                            transform: translateX(26px);
-                            background-color: #fffdf7;
-                        }
-                
-                        input{
-                            display: none;
-                        }
-                
-                        #modeLabel {
-                            margin-left: 10px;
-                        }
-                
-                    </style>
-
-
-                </div>
-            </div>
         </div>
 
         <section class="title-info-container">

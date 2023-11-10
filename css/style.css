@@ -1,5 +1,12 @@
 /* GENERAL STYLING */
 
+
+:root{
+    --title: 'Passion One';
+    
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -642,7 +649,6 @@ footer a:hover{
 @media screen and (max-width: 500px){
 
     .desktop-header,
-    .linkedin,
     .info-container,
     .my-projects,footer,.banner{
         display: none;
@@ -665,8 +671,9 @@ footer a:hover{
         padding-top: 90px;
         font-size: 4rem;
         text-align: center;
-        font-weight: 900;
+        font-weight: 700;
         text-transform: uppercase;
+        font-family: var(--title);
     }
 
     .title-info-container{
@@ -675,9 +682,77 @@ footer a:hover{
         padding-top: 60px;
     }
 
+    .linkedin{
+        margin-top: 50%;
+    }
+
+    .linkedin a{
+        font-size: 2rem;
+    }
+
+    .linkedin img{
+        height: 25px
+    }
+
     .title-info{
         width: 100%;
         text-align: center;
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FONTS */
+
+
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('/fonts/PassionOne-Bold.woff2') format('woff2'),
+        url('/fonts/PassionOne-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('/fonts/PassionOne-Black.woff2') format('woff2'),
+        url('/fonts/PassionOne-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('/fonts/PassionOne-Regular.woff2') format('woff2'),
+        url('/fonts/PassionOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

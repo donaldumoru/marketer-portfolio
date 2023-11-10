@@ -615,6 +615,7 @@ footer a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 1rem;
     background-color: #e9e6dd;
     position: absolute;
     top: 50px;

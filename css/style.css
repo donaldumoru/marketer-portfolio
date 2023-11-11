@@ -668,7 +668,7 @@ footer a:hover{
     }
 
     .title-text-container p{
-        padding-top: 90px;
+        padding: 90px 20px;
         font-size: 6rem;
         text-align: center;
         font-weight: 700;

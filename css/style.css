@@ -648,9 +648,9 @@ footer a:hover{
 @media screen and (max-width: 480px){
 
     .desktop-header,
-    .info-container,
     .my-projects,footer,.banner,
-    .linkedin{
+    .linkedin,
+    .info-intro p{
         display: none;
     }
 
@@ -685,6 +685,14 @@ footer a:hover{
     .title-info{
         width: 100%;
         text-align: center;
+    }
+
+    main{
+        height: 90vh;
+    }
+
+    .info-intro h2{
+        font-size: 1rem;
     }
     
 }

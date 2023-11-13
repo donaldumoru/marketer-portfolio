@@ -32,6 +32,7 @@ header{
     padding: 0 30px;
 }
 
+
 .empty-area{
     /* display: flex;
     justify-content: center;
@@ -306,7 +307,7 @@ header{
 
 /* FOOTER */
 
-footer{
+/* footer{
     margin-top: 120px;
     display: flex;
     flex-direction: column;
@@ -360,7 +361,7 @@ footer a{
 
 footer a:hover{
     color: #acaba8;
-}
+} */
 
 
 
@@ -645,12 +646,94 @@ footer a:hover{
   }
   
 
+@media screen and (min-width: 481px){
+
+    .mobile-wallpaper{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+        /* FOOTER */
+
+    footer{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        justify-content: flex-end;
+        gap: 70px;
+        padding: 0 30px;
+    }
+
+    .footer-links{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .footer-bottom{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        border-top: 1.5px solid #e9e6dd;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .footer-title{
+        padding: 10px;
+        border-bottom: 2px solid #e9e6dd;
+    }
+
+    .footer-flex{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-flex img{
+        width: 30px;
+    }
+
+    .footer-details{
+        display: flex;
+        gap: 20px;
+    
+    }
+
+    footer a{
+        transition: 0.3s;
+    }
+
+    footer a:hover{
+        color: #acaba8;
+    }
+    
+}
+
 @media screen and (max-width: 480px){
 
+
+    /* HOMEPAGE */
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #242526;
+        color: #e9e6dd;
+    }
+
     .desktop-header,
-    .info-container,
-    .my-projects,footer,.banner,
-    .linkedin{
+    .banner,
+    .linkedin,
+    .info-intro p{
         display: none;
     }
 
@@ -667,13 +750,12 @@ footer a:hover{
         font-size: 1.2rem;
     }
 
-    .title-text-container p{
-        padding-top: 90px;
-        font-size: 4rem;
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-family: var(--title);
+    .mobile-wallpaper img{
+        padding: 100px 30px 0 30px;
+    }
+
+    .title-text-container{
+        display: none;
     }
 
     .title-info-container{
@@ -686,7 +768,147 @@ footer a:hover{
         width: 100%;
         text-align: center;
     }
+
+    #desktop-main{
+        height: 90vh;
+    }
+
+    .info-intro h2{
+        font-size: 1rem;
+    }
+
+    .icons-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
     
+    .icon-grid img{
+        height: 80px;
+    }
+
+    .my-projects-grid-container{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project{
+        font-size: 2rem;
+    }
+
+    .get-in-touch span{
+        font-size: 1rem;
+    }
+
+    .get-in-touch img{
+        width: 30px;
+    }
+
+
+    /* PORTFOLIO PAGE */
+
+    .portfolio-container{
+        display: flex;
+        gap: 5px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .project-title {
+        color: #e9e6dd;
+    }
+
+
+    /* ABOUT ME PAGE */
+
+
+    .square-container{
+        display: none;
+    }
+
+    #about-main{
+        background-image: url(../images/about2.jpg);
+    }
+
+    .about-me-container{
+        flex-direction: column;
+        padding: 7%;
+    }
+    
+    footer{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 70px;
+        padding: 0 30px;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-top: 1.5px solid #e9e6dd;
+        gap: 30px;
+    }
+
+    .bottom-text{
+        font-size: 0.75rem;
+    }
+
+    .bottom-text a{
+        font-size: 0.75rem;
+    }
+
+
+    .footer-title{
+        border-bottom: 2px solid #e9e6dd;
+    }
+
+    .footer-flex{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .footer-flex img{
+        width: 20px;
+    }
+
+    .footer-details{
+        display: flex;
+        gap: 20px;
+    
+    }
+
+    .portfolio-footer-title{
+        border-bottom: 2px solid #242526;
+    }
+
+    footer a{
+        transition: 0.3s;
+    }
+
+    footer a:hover{
+        color: #acaba8;
+    }
+
+    .privacy-wrapper{
+        display: flex;
+        gap: 30px;
+    }
+
+    .bottom-text-span{
+        font-size: 0.75rem;
+    }
 }
 
 

@@ -815,6 +815,10 @@ footer a:hover{
         flex-direction: column;
     }
 
+    .project-title {
+        color: #e9e6dd;
+    }
+
 
     /* ABOUT ME PAGE */
 

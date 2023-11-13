@@ -713,6 +713,9 @@ footer a:hover{
 
 @media screen and (max-width: 480px){
 
+
+    /* HOMEPAGE */
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -742,14 +745,18 @@ footer a:hover{
         font-size: 1.2rem;
     }
 
-    .title-text-container p{
+    .mobile-wallpaper img{
+        padding: 100px 30px 0 30px;
+    }
+
+    /* .title-text-container p{
         padding-top: 90px;
         font-size: 4rem;
         text-align: center;
         font-weight: 700;
         text-transform: uppercase;
         font-family: var(--title);
-    }
+    } */
 
     .title-info-container{
         flex-direction: column;

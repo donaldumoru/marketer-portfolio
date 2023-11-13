@@ -811,7 +811,7 @@ footer a:hover{
     .portfolio-container{
         display: flex;
         gap: 5px;
-        padding: 20px;
+        padding: 10px;
         flex-direction: column;
     }
 

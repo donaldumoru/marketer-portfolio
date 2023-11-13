@@ -822,6 +822,9 @@ footer a:hover{
 
     /* ABOUT ME PAGE */
 
+    #main-about{
+        background-color: #24252600;
+    }
 
     .square-container{
         display: none;

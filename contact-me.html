@@ -9,29 +9,191 @@
 
     <link rel="icon" href="" alt="favicon" type="image/x-icon" />
     <link rel="apple-touch-icon" href="">
-    <title>Document</title>
     <link rel="stylesheet" id="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 
-    <form method="post" action="email.php">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required>
-        
-        <label for="email">email</label>
-        <input type="email" name="email" id="email" required>
-        
-        <label for="subject">Subject</label>
-        <input type="text" name="subject" id="subject" required>
-        
-        <label for="message">Message</label>
-        <textarea name="message" id="message" required></textarea>
-        
-        <br>
-        
-        <button>Send</button>
-    </form>
+    <header class="desktop-header" id="portfolio-header">
+        <ul class="desktop-other-nav">
+            <div class="logo">
+                <a href="index.html"><li>KAUTHAR ADEDEJI</li></a>
+            </div>
+
+            <div class="nav-container">
+                <a href="about-me.html">
+                    <li>
+                        ABOUT
+                    </li>
+                </a>
+
+                <a href="portfolio.html">
+                    <li>
+                        PORTFOLIO
+                    </li>
+                </a>
+
+                <a href="contact-me.html">
+                    <li>
+                        CONTACT
+                    </li>
+                </a>
+            </div>
+        </ul>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html"><div class="mobile-logo">
+            KAUTHAR ADEDEJI
+        </div></a>
+
+		<div class="menu-toggle" id="menuToggle">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+		<ul class="menu" id="menu">
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="about-me.html">ABOUT ME</a></li>
+			<li><a href="contact-me.html">CONTACT ME</a></li>
+			<li><a href="files/cv.pdf" target="_blank">RESUME</a></li>
+		</ul>
+	</nav>
+
+
+    
+    <div class="background">
+        <div class="contact-container">
+          <div class="screen">
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>LET'S TALK.</span>
+                  <span>SEND ME A MESSAGE &#128522;</span>
+                </div>
+                <div class="app-contact">adesoladdj@gmail.com</div>
+              </div>
+  
+              <form action="">
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME" required>
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL" required>
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="SUBJECT" required>
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE" required>
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCEL</button>
+                      <button class="app-form-button">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <footer>
+
+        <div class="footer-links">
+    
+    
+            <div class="footer-flex">
+                <span class="footer-title">NAVIGATION</span>
+    
+                
+                <div class="footer-details">
+                    <span class="footer-link"><a href="index.html">HOME</a></span>
+                </div>
+    
+                <div class="footer-details">
+                    <span class="footer-link"><a href="portfolio.html">PORTFOLIO</a></span>
+                </div>
+    
+                <div class="footer-details">
+                    <span class="footer-link"><a href="#html">ABOUT ME</a></span>
+                </div>
+    
+                <div class="footer-details">
+                    <span class="footer-link"><a href="contact-me.html">CONTACT</a></span>
+                </div>
+    
+                <div class="footer-details">
+                    <span class="footer-link"><a href="files/cv.pdf" target="_blank">RESUME</a></span>
+                </div>
+                
+            </div>
+    
+            <div class="footer-flex">
+                <span class="footer-title">SOCIAL MEDIA</span>
+                <div class="footer-details">
+                    <img src="images/linkedin.png" alt="Linkedin icon">
+                    <span class="footer-link"><a href="https://linkedin.com/in/adesola-adedeji" target="_blank">LINKEDIN</a></span>
+                </div>
+    
+                <div class="footer-details">
+                    <img src="images/instagram.png" alt="Instagram icon">
+                    <span class="footer-link"><a href="https://www.instagram.com/ms_yehtie/" target="_blank">INSTAGRAM</a></span>
+                </div>
+    
+                <div class="footer-details">
+                    <img src="images/x.png" alt="X icon">
+                    <span class="footer-link"><a href="https://twitter.com/ms_yehtie" target="_blank">X</a></span>
+                </div>
+    
+                
+                <div class="footer-details">
+                    <img src="images/tiktok.png" alt="Tiktok icon">
+                    <span class="footer-link"><a href="https://www.tiktok.com/@ms_yehtie" target="_blank">TIKTOK</a></span>
+                </div>
+            </div>
+    
+            <div class="footer-flex">
+                <span class="footer-title">CONTACT INFO</span>
+                <div class="footer-details">
+                    <img src="images/location-pin.png" alt="Location icon">
+                    <span>HULL, UNITED KINGDOM</span>
+                </div>
+    
+                <div class="footer-details">
+                    <img src="images/mail.png" alt="Mail icon">
+                    <span class="footer-link"><a href="mailto:adesoladdj@gmail.com">adesoladdj@gmail.com</a></span>
+                </div>
+            </div>
+            
+        </div>
+    
+    
+        <div class="footer-bottom">
+            <div class="bottom-text">
+                &#169;2023 KAUTHAR ADEDEJI, ALL RIGHTS RESERVED
+            </div>
+    
+            <div class="privacy-wrapper">
+                <div class="bottom-text">
+                    <a href="privacy-policy.html">PRIVACY POLICY</a>
+                </div>
+    
+                <div class="bottom-text">
+                    SITE BY <a href="https://www.otehplatforms.com/"> OTEH PLATFORMS</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </footer>
+
     
 </body>
 </html>

@@ -2,7 +2,10 @@
 
 
 :root{
-    --title: 'Passion One';
+    --title: 'Bungee';
+    --description: 'Rosarivo';
+    --text: 'Roboto';
+
 }
 
 
@@ -118,6 +121,7 @@ header{
     font-size: 0.8rem;
     letter-spacing: 1px;
     transition: 0.3s;
+    font-family: var(--text);
 }
 
 .title-info a:hover{
@@ -194,9 +198,9 @@ header{
 
 .info-intro p{
     margin-top: 10px;
-    font-family: serif;
+    font-family: var(--description);
     font-style: italic;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .icons-container{
@@ -217,12 +221,11 @@ header{
 
 .icon-title{
     font-size: 1.2rem;
-    font-weight: 700;
 }
 
 .icon-details p{
     margin-top: 10px;
-    font-family: serif;
+    font-family: var(--description);
     font-size: 1.4rem;
     line-height: 2rem;
 }
@@ -261,6 +264,10 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 60px;
+}
+
+.my-projects span{
+    font-family: var(--text);
 }
 
 .my-projects-grid-container{
@@ -394,8 +401,8 @@ footer a:hover{
 
 .about-me p{
     color: #242526;
-    font-family: serif;
-    font-size: 1.3rem;
+    font-family: var(--description);
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -531,6 +538,7 @@ footer a:hover{
 
 .portfolio-grid{
     position: relative;
+    cursor: pointer;
 }
 
 .project-title{
@@ -669,6 +677,7 @@ footer a:hover{
         padding: 0 30px;
     }
 
+
     .footer-links{
         display: flex;
         justify-content: space-around;
@@ -714,6 +723,10 @@ footer a:hover{
         color: #acaba8;
     }
     
+    .privacy-wrapper{
+        display: flex;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -989,31 +1002,293 @@ footer a:hover{
 /* FONTS */
 
 
+@font-face {
+    font-family: 'Rosarivo';
+    src: url('/fonts/Rosarivo-Italic.woff2') format('woff2'),
+        url('/fonts/Rosarivo-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
 
 @font-face {
-    font-family: 'Passion One';
-    src: url('/fonts/PassionOne-Bold.woff2') format('woff2'),
-        url('/fonts/PassionOne-Bold.woff') format('woff');
+    font-family: 'Rosarivo';
+    src: url('/fonts/Rosarivo-Regular.woff2') format('woff2'),
+        url('/fonts/Rosarivo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('/fonts/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Passion One';
-    src: url('/fonts/PassionOne-Black.woff2') format('woff2'),
-        url('/fonts/PassionOne-Black.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-BlackItalic.woff2') format('woff2'),
+        url('/fonts/Roboto-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-BoldItalic.woff2') format('woff2'),
+        url('/fonts/Roboto-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-ThinItalic.woff2') format('woff2'),
+        url('/fonts/Roboto-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Italic.woff2') format('woff2'),
+        url('/fonts/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('/fonts/Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Light.woff2') format('woff2'),
+        url('/fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-MediumItalic.woff2') format('woff2'),
+        url('/fonts/Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Black.woff2') format('woff2'),
+        url('/fonts/Roboto-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Passion One';
-    src: url('/fonts/PassionOne-Regular.woff2') format('woff2'),
-        url('/fonts/PassionOne-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Thin.woff2') format('woff2'),
+        url('/fonts/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .background {
+    display: flex;
+    min-height: 80vh;
+    background-color: #e9e6dd;
+  }
+  
+  .contact-container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 5px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #e9e6dd;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background: #e9e6dd;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 0.75rem;
+    color: #e9e6dd;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #e9e6dd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #e9e6dd;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #e9e6dd;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+  
